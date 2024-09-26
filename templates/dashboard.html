@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p><strong>Number of Logins:</strong> {{ login_info.logins }}</p>
+        <p><strong>Last Login:</strong> {{ login_info.last_login }}</p>
+        <a href="/logout"><button>Logout</button></a>
+    </div>
+</body>
+
+</html>
